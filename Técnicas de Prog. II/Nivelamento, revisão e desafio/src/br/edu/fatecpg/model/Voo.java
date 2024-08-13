@@ -1,4 +1,6 @@
 package model;
+import javax.swing.*;
+import java.awt.*;
 
 public class Voo {
     private String numeroVoo;
@@ -68,4 +70,5 @@ public class Voo {
         System.out.println("Destino: " + destino);
         System.out.println("Assentos Disponíveis: " + assentosDisponiveis);
     }
+
 }
