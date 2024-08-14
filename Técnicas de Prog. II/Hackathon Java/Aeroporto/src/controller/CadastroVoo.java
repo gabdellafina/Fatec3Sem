@@ -1,7 +1,6 @@
 package controller;
 import model.Aeroporto;
 import model.Voo;
-
 import javax.swing.*;
 import java.awt.*;
 
