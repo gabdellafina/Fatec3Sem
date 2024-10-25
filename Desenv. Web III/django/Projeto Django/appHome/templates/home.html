@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}Alchemia{% endblock %}
+
+{% block main %}
+    <div class="container text-center">
+        <div class="row justify-content-md-center">
+            <div class="col">
+                <h1 class="display-3 fw-bold">Alchemia</h1>
+                <hr>
+                <p class="lead text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem?</p>
+                <p class="mt-3 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam doloribus expedita</p>
+                <hr>
+                <h2 class="display-6">Nossos serviços: </h2>
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card card-blur text-white">
+                            <img src="static/59afb8592cf9723428359d2b406ce4d6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card card-blur text-white">
+                            <img src="static/a6da49bb00ed52ac4ef109f5246114b7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card card-blur text-white">
+                            <img src="static/afcfc54bbe1bf9f463fc9e3194dc972c.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <a href="{% url 'cadastrar_user' %}">
+                    <button class="bn54" style="width: 650px; height: 50px">
+                      <span class="bn54span">Cadastro</span>
+                    </button>
+                </a>
+            </div>
+            <div class="col-md-auto">
+                <img src="static/c8db911ad2aaee1a676f4e40d5796adf.jpg" alt="img" class="img-fluid" height="100%">
+            </div>
+        </div>
+    </div>
+{% endblock %}

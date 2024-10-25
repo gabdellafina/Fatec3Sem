@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Cadastro de produtos{% endblock %}
+
+{% block main %}
+
+    <div class="container text-center mt-5">
+        <h1 class="display-3">Cadastro de produtos</h1>
+
+        <div class="container text-center mt-5 mb-5 col-6">
+            <form action="{% url 'cadastrar_prod' %}" method="post">
+                {% csrf_token %}
+                <label class="form-label">Nome do produto</label>
+                {{ form.nome }}
+                </label>
+                <hr>
+
+                <label class="form-label">Preço</label>
+                {{ form.preco }}
+
+                <hr>
+
+                <label class="form-label">Descrição</label>
+                {{ form.desc }}
+                <br>
+                <input type="submit" class="bn54" value="Cadastrar" style="background-color: #5f0f40; color: #fff; height: 70px;"> 
+            </form>
+        </div>
+    </div>
+{% endblock %}

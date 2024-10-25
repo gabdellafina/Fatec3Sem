@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Alchemia{% endblock %}
+
+{% block main %}
+    <div class="container text-center mt-5">
+        <h1 class="display-3">Cadastre seu usuário!</h1>
+
+        <div class="container text-center mt-5 mb-5 col-6">
+            <form action="{% url 'cadastrar_user' %}" method="post">
+                {% csrf_token %}
+                <label class="form-label">Nome Completo</label>
+                {{ form.nome }}
+
+                <hr>
+
+                <label class="form-label">Email</label>
+                {{ form.email }}
+
+                <hr>
+
+                <label class="form-label">Senha</label>
+                {{ form.senha }}
+                <br>
+                <input type="submit" class="bn54" value="Cadastrar" style="background-color: #5f0f40; color: #fff; height: 70px;"> 
+            </form>
+        </div>
+    </div>
+{% endblock %}
